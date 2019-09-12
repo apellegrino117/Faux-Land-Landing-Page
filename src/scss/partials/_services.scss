@@ -1,11 +1,14 @@
 
 .services {
   .heading {
-    font-size: 4em;
-    text-align: center;
+    font-size: 2em;
+    text-align: left;
     font-weight: 300;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: #4768DB;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin:2em;
   }
   //padding: 4rem;
   margin: $section-spacing;

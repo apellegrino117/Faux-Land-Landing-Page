@@ -248,11 +248,14 @@ nav {
 .intro {
   margin: 200px 0; }
   .intro .heading {
-    font-size: 4em;
-    text-align: center;
+    font-size: 2em;
+    text-align: left;
     font-weight: 300;
-    font-family: 'Rock Salt', cursive;
-    color: #4768DB; }
+    font-family: 'Montserrat', sans-serif;
+    color: #4768DB;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 2em; }
 
 .card-container {
   display: flex;
@@ -371,11 +374,14 @@ nav {
   background-color: white;
   position: relative; }
   .services .heading {
-    font-size: 4em;
-    text-align: center;
+    font-size: 2em;
+    text-align: left;
     font-weight: 300;
-    font-family: 'Rock Salt', cursive;
-    color: #4768DB; }
+    font-family: 'Montserrat', sans-serif;
+    color: #4768DB;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 2em; }
   .services .services-container {
     display: flex;
     margin: 0 auto;
