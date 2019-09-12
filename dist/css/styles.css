@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Delius+Unicase|Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap");
+html {
+  scroll-behavior: smooth; }
+
 h1 {
   font-family: "Playfair Display", serif; }
 
@@ -12,7 +15,8 @@ h1 {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .5px;
   font-weight: 400;
   overflow-x: hidden; }
 
@@ -123,7 +127,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 4rem;
-    background-color: white; }
+    background-color: transparent; }
     header nav {
       all: unset;
       position: relative; }
@@ -141,6 +145,15 @@ nav {
         align-items: center; }
         header nav ul li {
           margin: 0 1rem; } }
+
+.solid {
+  background-color: white;
+  transition: background-color .75s ease 0s;
+  box-shadow: 0 0 4px grey; }
+  @media screen and (max-width: 800px) {
+    .solid ul {
+      background-color: white;
+      height: 100vh; } }
 
 .hero {
   background-image: url("/src/img/bubbles-hero.jpg");
@@ -181,8 +194,9 @@ nav {
     font-size: 3em;
     margin-bottom: 0;
     text-align: center;
-    font-family: "Playfair Display", serif;
-    font-weight: 300; }
+    font-family: 'Rock Salt', cursive;
+    font-weight: 300;
+    line-height: 1.8; }
     @media screen and (max-width: 600px) {
       .center-content h1 {
         font-size: 2em; } }
@@ -232,11 +246,13 @@ nav {
     top: 15%; } }
 
 .intro {
-  padding: 1rem 0; }
+  margin: 200px 0; }
   .intro .heading {
-    font-size: 2em;
+    font-size: 4em;
     text-align: center;
-    font-weight: 300; }
+    font-weight: 300;
+    font-family: 'Rock Salt', cursive;
+    color: #4768DB; }
 
 .card-container {
   display: flex;
@@ -293,9 +309,11 @@ nav {
     .card .social-list .social-link {
       color: #55d6aa;
       opacity: 1;
-      font-size: 1.125rem; }
+      font-size: 1.125rem;
+      transition: 0.5s ease-in-out; }
       .card .social-list .social-link:hover, .card .social-list .social-link:focus {
-        opacity: 1; }
+        opacity: 1;
+        color: white; }
 
 @media (min-width: 1300px) {
   .intro {
@@ -332,7 +350,9 @@ nav {
     margin-left: -100px;
     background: rgba(255, 255, 255, 0.8); }
     .iphone p strong {
-      font-weight: black; }
+      font-weight: black;
+      font-family: 'Rock Salt', cursive;
+      line-height: 1; }
     @media screen and (min-width: 1250px) and (max-width: 1900px) {
       .iphone p {
         font-size: 3.3em;
@@ -347,11 +367,15 @@ nav {
     margin: 0; } }
 
 .services {
-  padding: 3rem;
+  margin: 200px 0;
   background-color: white;
   position: relative; }
   .services .heading {
-    color: black; }
+    font-size: 4em;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Rock Salt', cursive;
+    color: #4768DB; }
   .services .services-container {
     display: flex;
     margin: 0 auto;
@@ -373,6 +397,8 @@ nav {
         font-size: 3rem;
         line-height: 100px;
         vertical-align: middle; }
+      .services .services-container .service-item p {
+        text-align: justify; }
       .services .services-container .service-item .circle-icon {
         background: #B06AB3;
         width: 100px;

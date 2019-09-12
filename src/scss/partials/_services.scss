@@ -1,9 +1,14 @@
 
 .services {
   .heading {
-    color:black;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Rock Salt', cursive;
+    color: #4768DB;
   }
-  padding: 3rem;
+  //padding: 4rem;
+  margin: $section-spacing;
   //background-color: #5E68D2;
   background-color: white;
   .services-container {
@@ -27,6 +32,9 @@
         font-size: 3rem;
         line-height: 100px;
         vertical-align: middle;
+      }
+      p{
+        text-align: justify;
       }
       .circle-icon {
         background: #B06AB3;

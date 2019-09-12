@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Delius+Unicase|Rock+Salt&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
 h1 {
   font-family: "Playfair Display", serif;
 }
@@ -14,7 +17,9 @@ h1 {
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  //font-family: "Roboto", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .5px;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -42,3 +47,5 @@ $blue-gradient: linear-gradient(
   #b06ab3
 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 $container-padding: 0 4rem;
+
+$section-spacing: 200px 0;

@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="./dist/css/styles.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="./src/js/main.js"></script>
         <title>FAUX LAND</title>
     </head>
     <body>
@@ -17,10 +19,10 @@
             <input type="checkbox" class="nav-toggle" id="nav-toggle">
             <nav>
                 <ul>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team" >Team</a></li>
+                    <li><a href="#services" >Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <label for="nav-toggle" class="nav-toggle-label">
@@ -34,9 +36,11 @@
                 <h3>And I'm not just talking about cookies</h3>
                 <a href="#" class="button">Some Action Here</a>
             </div>
+            <a href="#about">
             <div class="scroll-indicator fa fa-chevron-down"></div>
+        </a>
         </section>
-        <section class="iphone">
+        <section class="iphone" id="about">
             <div class="iphone-box">
                 <img src="./src/img/iphone.jpg" alt="">
             </div>
@@ -48,7 +52,7 @@
 
             </div>
         </section>
-        <section class="intro">
+        <section class="intro" id="team">
             <h2 class="heading">Meet the team</h2>
             <div class="card-container">
                 <div class="card">
@@ -68,7 +72,7 @@
                         </ul>
                     </div>
                     <div class="profile-main">
-                        <h2 class="profile-name">Jim Thorton</h2>
+                        <h2 class="profile-name">Bella Thorne</h2>
                         <p class="profile-position">Graphic Designer</p>
                         <div class="profile-body">Lorem ipsum dolor sit amet
                             consectetur, adipisicing elit. Suscipit molestias
@@ -130,40 +134,34 @@
 
         </section>
        
-        <section class="services">
+        <section class="services" id="services">
             <h2 class="heading">Services</h2>
             <div class="services-container">
                 <div class="service-item">
                     <a href="" class="service-icon"><i class="fas
                             fa-laptop-code circle-icon"></i></a>
                     <h2 class="service-name">Web Development</h2>
-                    <p class="service-desc">Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Voluptate possimus
-                        placeat commodi asperiores nisi deleniti soluta
-                        cupiditate sint vero, ullam rerum est,
-                        iusto quas optio maiores ad repudiandae rem saepe?</p>
+                    <p class="service-desc">Another one. Stay focused. Look at the sunset, life is amazing, 
+                        life is beautiful, life is what you make it. The ladies always say
+                         Khaled you smell good, I use no cologne. Cocoa butter is the key. </p>
                 </div>
                 <div class="service-item">
                     <a href="" class="service-icon"><i class="fas fa-palette circle-icon"></i></a>
                     <h2 class="service-name">Digital Design</h2>
-                    <p class="service-desc">Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Voluptate possimus
-                        placeat commodi asperiores nisi deleniti soluta
-                        cupiditate sint vero, ullam rerum est,
-                        iusto quas optio maiores ad repudiandae rem saepe?</p>
+                    <p class="service-desc">Special cloth alert. The weather is amazing, walk with me through the pathway of more success. Take this journey with me, Lion! Fan luv. I’m giving you cloth talk, 
+                        cloth. Special cloth alert, cut from a special cloth. 
+                        Stay focused. Let’s see what Chef Dee got that they don’t want us to eat.</p>
                 </div>
                 <div class="service-item">
                     <a href="" class="service-icon"><i class="fab fa-searchengin circle-icon"></i></a>
                     <h2 class="service-name">SEO Optimization</h2>
-                    <p class="service-desc">Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Voluptate possimus
-                        placeat commodi asperiores nisi deleniti soluta
-                        cupiditate sint vero, ullam rerum est,
-                        iusto quas optio maiores ad repudiandae rem saepe?</p>
+                    <p class="service-desc">You smart, you loyal, you a genius. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. 
+                        The key to more success is to have a lot of pillows. 
+                        Hammock talk come soon. You smart, you loyal, you a genius. </p>
                 </div>
             </div>
         </section>
-         <section class="contact">
+         <section class="contact" id="contact">
             <div class="contact-text">
                 <div class="contact-details">
                     <div class="design">

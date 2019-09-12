@@ -1,11 +1,13 @@
 .intro {
   //display: flex;
-  padding: 1rem 0;
+  //padding: 1rem 0;
+  margin: $section-spacing;
   .heading {
-    //font-family: 'Delius Unicase', cursive;
-    font-size: 2em;
+    font-size: 4em;
     text-align: center;
     font-weight: 300;
+    font-family: 'Rock Salt', cursive;
+    color: #4768DB;
   }
 }
 .card-container {
@@ -77,10 +79,11 @@
       color: $primary-color;
       opacity: 1;
       font-size: 1.125rem;
-
+      transition: 0.5s ease-in-out;
       &:hover,
       &:focus {
         opacity: 1;
+        color:white;
       }
     }
   }
