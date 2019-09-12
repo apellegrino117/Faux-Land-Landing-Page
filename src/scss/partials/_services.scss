@@ -1,0 +1,63 @@
+
+.services {
+  .heading {
+    color:black;
+  }
+  padding: 3rem;
+  //background-color: #5E68D2;
+  background-color: white;
+  .services-container {
+    display: flex;
+    @media (max-width: 850px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+    margin: 0 auto;
+    justify-content: space-around;
+    .service-item {
+      max-width: 25%;
+      @media (max-width: 850px) {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+      text-align: center;
+      z-index: 20;
+      i {
+        color: white;
+        font-size: 3rem;
+        line-height: 100px;
+        vertical-align: middle;
+      }
+      .circle-icon {
+        background: #B06AB3;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        vertical-align: middle;
+      }
+      h2{
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 1px;
+      }
+    }
+  }
+  position: relative;
+  //overflow: hidden;
+  &:before {
+    content: ""; // ::before and ::after both require content
+    position: absolute;
+    background: url("/src/img/abstract.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    //bottom:0;
+    left: 0;
+    top: 0;
+    width: 612px;
+    height: 612px;
+    //background: $blue-gradient;
+    opacity: 0.2;
+  }
+}
