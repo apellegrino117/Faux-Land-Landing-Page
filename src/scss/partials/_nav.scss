@@ -1,8 +1,5 @@
 header {
   background-color: white;
-  //background: transparent;
-  //background:rgba(255,255,255,.5);
-  // background-image:linear-gradient(rgba(white,.7), rgba(0,0,0,0)); /* Standard syntax (must be last) */
   text-align: center;
   position: fixed;
   width: 100%;
@@ -12,6 +9,7 @@ header {
   .logo {
     margin: 0;
     padding: 1em 0;
+
     img {
       max-width: 150px;
     }
@@ -39,6 +37,7 @@ header {
     border-radius: 2px;
     position: relative;
   }
+
   span::before {
     content: "";
     position: absolute;
@@ -49,6 +48,7 @@ header {
     height: 2px;
     width: 2em;
   }
+
   span::after {
     content: "";
     position: absolute;
@@ -60,12 +60,13 @@ header {
     width: 2em;
   }
 }
+
 nav {
   position: absolute;
   text-align: left;
   top: 100%;
   left: 0;
-  background:rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
@@ -82,25 +83,29 @@ nav {
       margin-left: 1em;
       padding: 1rem 0;
     }
+
     a {
       color: black;
       text-decoration: none;
       font-size: 2.5rem;
       text-transform: uppercase;
-      
+
       opacity: 0;
       font-weight: 300;
       transition: opacity 150ms ease-in-out;
-      &:hover, &:focus {
-        color: #AE6AB4;
+
+      &:hover,
+      &:focus {
+        color: $primary-color;
       }
     }
   }
 }
 
 .nav-toggle {
-  &:checked ~ nav {
+  &:checked~nav {
     transform: scale(1, 1);
+
     a {
       opacity: 1;
       transition: opacity 200ms ease-in-out 200ms;
@@ -112,6 +117,7 @@ nav {
   .nav-toggle-label {
     display: none;
   }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -119,10 +125,10 @@ nav {
     padding: $container-padding;
     background-color: transparent;
 
-    //background-image:linear-gradient(rgba(white,.7), rgba(0,0,0,0)); /* Standard syntax (must be last) */
     nav {
       all: unset;
       position: relative;
+
       a {
         opacity: 1;
         transition: ease 0.5s;
@@ -132,10 +138,12 @@ nav {
         text-transform: uppercase;
         font-weight: 300;
       }
+
       ul {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
         li {
           margin: 0 1rem;
         }
@@ -145,18 +153,15 @@ nav {
 }
 
 
-
-
-
-
 .solid {
   background-color: white;
   transition: background-color .75s ease 0s;
   box-shadow: 0 0 4px grey;
-  ul{
+
+  ul {
     @media screen and (max-width: 800px) {
-    background-color: white;
-    height: 100vh;
+      background-color: white;
+      height: 100vh;
     }
   }
 

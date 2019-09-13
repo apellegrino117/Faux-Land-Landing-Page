@@ -1,0 +1,82 @@
+.introduction {
+  margin: 3rem 0;
+  display: flex;
+
+  @media (max-width: 1250px) {
+    flex-direction: column;
+  }
+
+  .iphone-box {
+    img {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      @media (max-width: 1250px) {
+        width: 100%;
+      }
+    }
+  }
+
+
+  p {
+    font-size: 4rem;
+    padding: 3.5rem;
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    margin-left: -100px;
+    background: rgba(white, 0.8);
+
+    strong {
+      font-weight: black;
+      font-family: 'Rock Salt', cursive;
+      line-height: 1;
+      position: relative;
+    }
+
+    .body-button {
+      text-transform: uppercase;
+      color: white;
+      padding: 20px;
+      border: 1px solid white;
+      background: black;
+      text-decoration: none;
+      transition: ease 0.5s;
+      font-size: .5em;
+      font-family: sans-serif;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      display: inline-block;
+      margin-left: auto;
+      text-align: center;
+      margin-left: 1rem;
+
+      @media (max-width: 600px) {
+        transform: translateX(25%);
+        margin-top: 1.5rem;
+
+      }
+
+      &:hover {
+        background-color: transparent;
+        border-color: black;
+        color: black;
+      }
+    }
+
+    @media screen and (min-width: 1250px) and (max-width: 1900px) {
+      font-size: 3.3em;
+      margin-left: -140px;
+    }
+
+    @media (max-width: 1250px) {
+      font-size: 1.8em;
+      margin-left: 0;
+    }
+  }
+
+}
+
+@media (max-width: 1250px) {
+  .introduction {
+    margin: 0;
+  }
+}

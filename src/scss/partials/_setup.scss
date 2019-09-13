@@ -3,12 +3,17 @@
 @import url("https://fonts.googleapis.com/css?family=Rock+Salt&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
 
-html{
+
+//Global settings
+
+html {
   scroll-behavior: smooth;
 }
+
 h1 {
   font-family: "Playfair Display", serif;
 }
+
 *,
 *::before,
 *::after {
@@ -17,17 +22,12 @@ h1 {
 
 body {
   margin: 0;
-  //font-family: "Roboto", sans-serif;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: .5px;
   font-weight: 400;
   overflow-x: hidden;
 }
 
-.content {
-  display: grid;
-  place-items: center;
-}
 h1 {
   font-family: "Playfair Display", serif;
 }
@@ -41,11 +41,37 @@ h1 {
 //Colors
 
 $primary-color: rgb(85, 214, 170);
-$blue-gradient: linear-gradient(
-  to right,
+$blue-gradient: linear-gradient(to right,
   #4568dc,
-  #b06ab3
-); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-$container-padding: 0 4rem;
+  #b06ab3);
 
-$section-spacing: 200px 0;
+
+//Spacing
+
+$container-padding: 0 4rem;
+$section-spacing: 100px 0;
+
+
+//Button
+
+.body-button {
+  text-transform: uppercase;
+  color: black;
+  padding: 20px;
+  border: 1px solid black;
+  background: $primary-color;
+  text-decoration: none;
+  transition: ease 0.5s;
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  margin-left: auto;
+
+  &:hover {
+    background-color: transparent;
+    border-color: black;
+    color: black;
+  }
+}
